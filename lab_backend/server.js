@@ -31,7 +31,7 @@ app.delete('/games/:id', (req, res)=>{
 });
 
 //edit route
-app.put('/todos/:id', (req, res)=>{
+app.put('/games/:id', (req, res)=>{
     Games.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedGame)=>{
         res.json(updatedGame);
     });
