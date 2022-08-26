@@ -130,8 +130,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Hello World</h1>
-      <h2>Create a Board Game</h2>
+      <h1>Board Game Page</h1>
+      <div className = "mainContainer">
+            <div className = "container">
+            <h2>Create a Board Game</h2>
               <form onSubmit={handleNewGameSubmit}>
                   Name: <input type="text" onChange={handleNewNameChange}/><br/>
                   Players: <input type="text" onChange={handleNewPlayersChange}/><br/>
@@ -139,11 +141,10 @@ const App = () => {
                   Description: <input type="text" onChange={handleNewDescriptionChange}/><br/>
                   <input type="submit" value="Create a Board Game"/>
               </form>
-      <hr/>
-      <h2>BOARD GAMES SECTION</h2>
+            </div>
       {games.map((game)=>{
                 return (
-                  <div>
+                  <div className = "container">
                     <h2>{game.name}</h2>
                     <h2>{game.players}</h2>
                     <img src = {game.image}/>
@@ -162,6 +163,7 @@ const App = () => {
                   </div>
                 )
             })}
+            </div>
     </div>
   );
 }

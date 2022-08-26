@@ -40,3 +40,27 @@
 img {
   max-width: 200px;
 }
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container {
+  background-color: rgb(245, 238, 220);
+  border: 1px solid black;
+  padding: .5em;
+  text-align: center;
+  margin: auto auto 10px auto;
+  border-radius: 25px;
+}
+
+body {
+  background-image: url(https://cdn.shopify.com/s/files/1/1297/3303/products/standard-walnut-chess-board-21184254145_1024x1024.jpg?v=1575932118);
+}
+
+h1 {
+  color: white;
+}
